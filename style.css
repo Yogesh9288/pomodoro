@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-flow: column;
+    background-color:#a8f7ac;
+}
+h2{
+   margin-top:20px;
+}
+.container{
+    height:300px;
+    width: 400px;
+    background-color:#6acb6f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+.nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.study{
+    color: white;
+    background-color:#6acb6f;
+    border: none;
+    font-size:20px;
+    font-weight:500;
+    padding: 10px;
+}
+.study:hover{
+    background-color: #418d45;
+}
+.timer{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+}
+.break{
+    color: white;
+    background-color:#6a96cb;
+    border: none;
+    font-size:20px;
+    font-weight:500;
+    padding: 10px;
+}
+.break:hover{
+    background-color: #4c689c;
+}
+button{
+    border: none;
+    background: none;
+    border-radius: 5px;
+}
+#start{
+    margin:0 auto;
+    width: 60%;
+    transition: transform 0.1s ease;
+}
+
+@keyframes click-animation{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+#start:active{
+    animation: click-animation 0.2s forwards;
+}
+.footer{
+    text-align: center;
+}
+i{
+    font-size:20px;
+    margin-left: 10px;
+    color: white;
+}
