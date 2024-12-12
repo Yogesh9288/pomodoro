@@ -14,10 +14,11 @@ let audio=new Audio('emergency_bell_alarm_small_ring.mp3');
 function timeSet()
 {
     if(state=='study') timeLeft=1500;
-    else timeLeft=500;
+    else timeLeft=300;
 }
 function breakButton()
 {
+    std.style.background='';
     body.style.background='#a8d2f7';
     cont.style.background='#6a96cb';
  
@@ -27,12 +28,14 @@ function breakButton()
     });
     tim.innerHTML="05:00";
     state='break';
+    bk.style.background='#4c689c';
     timeSet();
 }
 bk.addEventListener('click',breakButton);
 
 function studyButton()
 {
+    bk.style.background='';
     body.style.background='#a8f7ac';
     cont.style.background='#6acb6f';
     btn.forEach((b)=>{
@@ -41,6 +44,7 @@ function studyButton()
     });
     tim.innerHTML="25:00";
     state='study';
+    std.style.background='#418d45';
     timeSet();
 }
 std.addEventListener('click',studyButton);
