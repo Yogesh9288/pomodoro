@@ -8,13 +8,13 @@ let st=document.querySelector('#start');
 let reset=document.querySelector('i');
 let timerId=null;
 let started=false;
-let timeLeft=15;
+let timeLeft=1500;
 let state='study';
 let audio=new Audio('emergency_bell_alarm_small_ring.mp3');
 function timeSet()
 {
-    if(state=='study') timeLeft=15;
-    else timeLeft=5;
+    if(state=='study') timeLeft=1500;
+    else timeLeft=500;
 }
 function breakButton()
 {
